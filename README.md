@@ -1,46 +1,65 @@
-# Getting Started with Create React App
+# Wine Statistics App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This is a simple React application for calculating and displaying statistics for wine data. It calculates statistics like Mean, Median, and Mode for the "Flavanoids" and "Gamma" properties in the dataset and presents them in a tabular format.
 
-## Available Scripts
+## Installation
 
-In the project directory, you can run:
+Before you begin, make sure you have [Node.js](https://nodejs.org/) and [Yarn](https://classic.yarnpkg.com/) installed on your machine.
 
-### `npm start`
+1. Clone this repository to your local machine:
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+   ```shell
+   git clone git@github.com:pranjalee23/wine-statistics.git
+   ```
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+2. Navigate to the project directory:
 
-### `npm test`
+   ```shell
+   cd wine-statistics-app
+   ```
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+3. Install project dependencies using Yarn:
 
-### `npm run build`
+   ```shell
+   yarn install
+   ```
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Usage
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+To run the Wine Statistics App locally, follow these steps:
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+1. Start the development server:
 
-### `npm run eject`
+   ```shell
+   yarn start
+   ```
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+2. Open your web browser and visit [http://localhost:3000](http://localhost:3000) to view the app.
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+3. You should see the Wine Statistics App displaying statistics for "Flavanoids" and "Gamma" in a tabular format.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+**Note: For simplicity, only the first 3 values of the mode are displayed in the table.**
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+## How the Code Works
 
-## Learn More
+The code is organized into the following files and folders:
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+- `src/App.tsx`: The main application component that calculates statistics and renders the app.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+- `src/components/StatisticsTable.tsx`: A reusable React component for rendering statistics in a tabular format.
+
+- `src/data/wineData.json`: Given wine data in JSON format used for calculations.
+
+- `src/utils/statistics.ts`: Utility functions for calculating Mean, Median, Mode, and Gamma.
+
+## Customization
+
+You can customize this app by:
+
+- Modifying the `wineData.json` file with a different dataset.
+
+- Adjusting the statistics calculations or adding more properties as needed in `src/utils/statistics.ts`.
+
+- Styling the app by editing the CSS in `src/App.css` and the component-specific styles.
+
+Feel free to extend and adapt the app to suit your specific needs.
