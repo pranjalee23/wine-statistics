@@ -40,6 +40,10 @@ To run the Wine Statistics App locally, follow these steps:
 
 **Note: For simplicity, only the first 3 values of the mode are displayed in the table.**
 
+**Flavanoids Table:** ![Flavanoids Table](./public/assets/flavanoid-statistics.png)
+
+**Gamma Table:** ![Gamma Table](./public/assets/gamma-statistics.png)
+
 ## How the Code Works
 
 The code is organized into the following files and folders:
